@@ -1,0 +1,87 @@
+body {
+  background-color: #181818;
+}
+
+@keyframes skeleton {
+  to {
+    opacity: 0.5;
+  }
+}
+
+.gifs {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gif {
+  margin: 2px 2px;
+}
+
+.loadingGif {
+  margin: 2px 2px;
+  animation: skeleton 0.7s ease infinite alternate;
+  background-color: #313131;
+  color: yellow;
+}
+
+input[type="range"] {
+  pointer-events: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  /*Webkit Browsers like Chrome and Safari*/
+  pointer-events: auto;
+}
+input[type="range"]::-moz-range-thumb {
+  /*Firefox*/
+  pointer-events: auto;
+}
+input[type="range"]::-ms-thumb {
+  /*Internet Explorer*/
+  pointer-events: auto;
+}
+
+.custom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom {
+  flex-direction: column;
+}
+
+.balls {
+  display: flex;
+}
+
+.ball {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 10px;
+  animation: ball 0.5s ease infinite alternate;
+}
+
+.ball2 {
+  animation-delay: 0.1s;
+}
+
+.ball3 {
+  animation-delay: 0.2s;
+}
+
+@keyframes ball {
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+.customText {
+  font-weight: 500;
+  color: white;
+}
